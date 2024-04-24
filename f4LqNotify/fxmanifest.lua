@@ -1,9 +1,9 @@
 fx_version 'adamant'
 
 game 'gta5'
-
-author 'fakeuittonxs'
-description 'dopeNotify2'
+name 'f4LqNotify'
+author 'f4Lq'
+description 'Notification'
 version '1.0'
 
 ui_page 'html/ui.html'
