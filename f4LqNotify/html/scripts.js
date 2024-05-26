@@ -72,17 +72,33 @@ $(function () {
                 $(`.notification_main-${number}`).addClass('long-icon')
                 $(`.wrapper-${number}`).addClass('long')
                 sound.play();
+            } else if (event.data.type == 'admin') {
+                $(`.title-${number}`).html(event.data.title).css({
+                    "font-size": "16px",
+                    "font-weight": "600"
+                })
+                $(`.notification_main-${number}`).addClass('admin-icon')
+                $(`.wrapper-${number}`).addClass('admin')
+                sound.play();
+            } else if (event.data.type == 'car') {
+                $(`.title-${number}`).html(event.data.title).css({
+                    "font-size": "16px",
+                    "font-weight": "600"
+                })
+                $(`.notification_main-${number}`).addClass('car-icon')
+                $(`.wrapper-${number}`).addClass('car')
+                sound.play();
             }
             anime({
                 targets: `.wrapper-${number}`,
-                translateX: -60,
+                translateY: 0, /*pozycja wyskakiwania notify na górze*/ 
                 duration: 750,
                 easing: 'spring(5, 100, 35, 10)',
             })
             setTimeout(function () {
                 anime({
                     targets: `.wrapper-${number}`,
-                    translateX: 500,
+                    translateY: -500, /*animacja odjechania notify do góry*/ 
                     duration: 750,
                     easing: 'spring(5, 80, 5, 0)'
                 })
