@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
 body {
-    margin-top: 40vh;  /*---[ CHANGING NOTIFY (Y) POSITION ]---*/
+    margin-top: 2vh;  /*---[ CHANGING NOTIFY (Y) POSITION ]---*/
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
 .notify {
     width: 80px;
-    margin-left: 95vw;  /*---[ CHANGING NOTIFY (X) POSITION ]---*/
+    margin-left: 50vw;  /*---[ CHANGING NOTIFY (X) POSITION ]---*/
 }
 
 .wrapper {
@@ -44,7 +44,7 @@ body {
 .success-icon::before {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
-    color: #069a19;
+    color: #0bcc25;
 }
 
 .success {
@@ -62,7 +62,7 @@ body {
 .info-icon::before {
     font-family: "Font Awesome 5 Free";
     content: "\f0f3";
-    color: #ffffff;
+    color: #ffffffde;
 }
 
 .info {
@@ -146,6 +146,44 @@ body {
     background: #191c1f;
     box-shadow: 0 0 40px #00000069;
     color: #fff;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/*---[ Admin MESSAGE NOTIFY ]---*/
+
+.admin-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f509";
+    color: red;
+}
+
+.admin {
+    background: #191c1f;
+    box-shadow: 0 0 40px #00000069;
+    color: #ff0000c2;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/*---[ Car MESSAGE NOTIFY ]---*/
+
+.car-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1b9";
+    color: rgb(22, 240, 185);
+}
+
+.car {
+    background: #191c1f;
+    box-shadow: 0 0 40px #00000069;
+    color: #ffffff;
     padding: 5px 5px 5px 5px;
     word-spacing: 0.5px;
     letter-spacing: 1px;
