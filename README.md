@@ -20,6 +20,8 @@ TriggerClientEvent('f4LqNotify:Alert', source, "Title", "Message", Time, 'type')
    4. error
    5. sms
    6. long
+   7. admin
+   8. car
 
 4. To change the icon of notification, use:
    1. Icon Library: https://fontawesome.com/v5/cheatsheet
